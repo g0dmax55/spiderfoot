@@ -71,10 +71,22 @@ SpiderFoot's 190+ modules feed each other in a publisher/subscriber model to ens
 
 To install and run SpiderFoot, you need at least Python 3.6 and a number of Python libraries which you can install with `pip`. We recommend you install a packaged release since master will often have bleeding edge features and modules that aren't fully tested.
 
-#### Stable build (packaged release):
+ #### Development build (cloning git master branch): 
+```
+$ git clone https://github.com/keralahacker/spiderfoot.git
+$ cd spiderfoot
+$ pip3 install -r requirements.txt
+~/spiderfoot$ python3 ./sf.py -l 127.0.0.1:5001
+```
+
+#### one line command 👇🏻  for Termux 
 
 ```
-$ wget https://github.com/smicallef/spiderfoot/archive/v3.2.tar.gz
+git clone https://github.com/smicallef/spiderfoot.git && cd spiderfoot && pip3 install -r requirements.txt && python3 -m pip install --upgrade pip && python3 ./sf.py -l 127.0.0.1:5001
+```
+
+
+$ wget https://github.com/keralahacker/spiderfoot/archive/v3.2.tar.gz
 $ tar zxvf v3.2.tar.gz
 $ cd spiderfoot
 ~/spiderfoot$ pip3 install -r requirements.txt
@@ -84,7 +96,7 @@ $ cd spiderfoot
 #### Development build (cloning git master branch):
 
 ```
-$ git clone https://github.com/smicallef/spiderfoot.git
+$ git clone https://github.com/keralahacker/spiderfoot.git
 $ cd spiderfoot
 $ pip3 install -r requirements.txt
 ~/spiderfoot$ python3 ./sf.py -l 127.0.0.1:5001
